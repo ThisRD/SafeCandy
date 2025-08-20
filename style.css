@@ -1,0 +1,27 @@
+body{
+    height: 100vh;
+    margin:0% !important;
+    padding: 0% !important;
+    /* color: black !important; */
+}
+
+.navbar{
+    background-color: #fff1de;
+}
+
+.navbar div a img{
+    width: 150px;
+}
+
+.container-fluid{
+    margin: 0% !important;
+    /* padding: 0% !important; */
+    display: flex;
+    justify-content: center !important;
+}
+
+.nav-link{
+    color: #dab88b !important;
+    /* text-shadow: 0.5px 0.5px 1px #9c8668; */
+    font-weight: 4px !important;
+}

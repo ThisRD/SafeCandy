@@ -1,0 +1,21 @@
+{
+  "name": "Safe Candy",
+  "short_name": "SC",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#dab88b",
+  "description": "Uma loja de doces feita para salvar a vida de homens quando sua cônjuge está no período de TPM ou irritada, ou facilitar a procura de mulheres independentes",
+  "icons": [
+    {
+      "src": "icons/logotipo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
