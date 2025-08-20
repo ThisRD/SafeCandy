@@ -13,6 +13,17 @@
     <meta name="theme-color" content="#dab88b">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/SafeCandy/sw.js').then(registration => {
+                    console.log('Service Worker registrado com sucesso:', registration);
+                }).catch(error => {
+                    console.log('Falha ao registrar Service Worker:', error);
+                });
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -45,17 +56,6 @@
 
     </main>
 
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/SafeCandy/sw.js').then(registration => {
-                    console.log('Service Worker registrado com sucesso:', registration);
-                }).catch(error => {
-                    console.log('Falha ao registrar Service Worker:', error);
-                });
-            });
-        }
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
